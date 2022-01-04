@@ -1,0 +1,95 @@
+header {
+    a {
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.start {
+            background: #664efc;
+            padding: .75rem 1.25rem;
+            border-radius: .25rem;
+            color: #f9f0fd;
+
+            span {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    header {
+        padding: 2rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    
+        .hamburger {
+            border: none;
+            background: transparent;
+            position: fixed;
+            right: 0;
+            z-index: 99;
+            padding: 2rem 1.5rem;
+        }
+    
+        nav {
+    
+            .nav-ul {
+                list-style-type: none;
+                display: none;
+                z-index: 98;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                left: -999%;
+                right: 0;
+                top: 0;
+                bottom: 0;
+    
+                &.show {
+                    height: 100vh;
+                    backdrop-filter: blur(.1rem);
+                    left: 0;
+                    background: linear-gradient(280deg, rgba(255,255,255, .7) 76%, rgba(121,0,129, .7) 160%);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3.5rem;
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            .nav-ul {
+                list-style-type: none;
+                display: flex;
+                gap: 1.25rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 3.5rem 10.5rem;
+    }
+}
