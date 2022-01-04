@@ -258,7 +258,7 @@ header a.start span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: .75rem;
+  gap: 1rem;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -352,6 +352,102 @@ header a.start span {
     width: 60%;
   }
   .section1_wrapper img {
+    width: 27.5%;
+  }
+}
+
+.section2_wrapper {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.section2_wrapper .feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .75rem;
+}
+
+.section2_wrapper .feed h2 {
+  font-size: 1.95rem;
+}
+
+.section2_wrapper .feed p {
+  color: #6b6b6b;
+}
+
+.section2_wrapper .feed a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #664efc;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.section2_wrapper .feed a:hover {
+  text-decoration: underline;
+}
+
+.section2_wrapper .feed a span {
+  font-size: .80rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section2_wrapper {
+    padding: 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section2_wrapper img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section2_wrapper {
+    padding: 3rem 10.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section2_wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section2_wrapper .feed h2 {
+    font-size: 2.5rem;
+  }
+  .section2_wrapper .feed p {
+    font-size: 1.2rem;
+  }
+  .section2_wrapper .feed a {
+    font-size: 1.1rem;
+  }
+  .section2_wrapper section {
+    width: 60%;
+  }
+  .section2_wrapper img {
     width: 27.5%;
   }
 }
