@@ -249,4 +249,110 @@ header a.start span {
     font-size: 1.1rem;
   }
 }
+
+.section1_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .75rem;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.section1_wrapper .resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .75rem;
+}
+
+.section1_wrapper .resources h2 {
+  font-size: 1.95rem;
+}
+
+.section1_wrapper .resources p {
+  color: #6b6b6b;
+}
+
+.section1_wrapper .resources a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #664efc;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.section1_wrapper .resources a:hover {
+  text-decoration: underline;
+}
+
+.section1_wrapper .resources a span {
+  font-size: .80rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section1_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7.5rem 3rem 3rem 3rem;
+  }
+  .section1_wrapper img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section1_wrapper {
+    padding: 10rem 10.5rem 5rem 10.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section1_wrapper section {
+    width: 55%;
+  }
+  .section1_wrapper img {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section1_wrapper {
+    padding: 15rem 10.5rem 5rem 10.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section1_wrapper .resources h2 {
+    font-size: 2.5rem;
+  }
+  .section1_wrapper .resources p {
+    font-size: 1.2rem;
+  }
+  .section1_wrapper .resources a {
+    font-size: 1.1rem;
+  }
+  .section1_wrapper section {
+    width: 60%;
+  }
+  .section1_wrapper img {
+    width: 27.5%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
