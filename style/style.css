@@ -451,4 +451,117 @@ header a.start span {
     width: 27.5%;
   }
 }
+
+footer {
+  padding: 1.5rem;
+  background: #fdfcf9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+footer .footer_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+footer .footer_text p {
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+footer ul li {
+  color: #000;
+  font-weight: 700;
+}
+
+footer ul a {
+  font-weight: 500;
+  color: #6b6b6b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+footer nav .nav_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 3rem 10.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer_text {
+    width: 40%;
+  }
+  footer nav {
+    gap: 1.5rem;
+  }
+  footer nav .nav_row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
