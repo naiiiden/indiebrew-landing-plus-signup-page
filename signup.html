@@ -16,5 +16,47 @@
             <p>Back to homepage</p>
         </div>
     </header>
+
+    <div class="main_form_wrapper">
+        <main>
+            <h1>Create your personalized feed.</h1>
+            <div class="text_icon">
+                <div class="emoji">🎈</div>
+                <p><span>Over 20 resources.</span> With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</p>
+            </div>
+            <div class="text_icon">
+                <div class="emoji">🗞</div>
+                <p><span>Delivered weekly.</span> Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.</p>
+            </div>
+            <div class="text_icon">
+                <div class="emoji">💡</div>
+                <p><span>Unlimited ideas.</span> With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?</p>
+            </div>
+        </main>
+    
+        <form autocomplete="on">
+            <h2>Create your IndieBrew Account</h2>
+            <div class="input_label_container">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="email" placeholder="john@example.com" autofocus required>
+            </div>
+            <div class="input_label_container">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullName" class="fullName" placeholder="John Doe" required>
+            </div>
+            <div class="input_label_container">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="password" minlength="8" placeholder="At least 8 characters" required>
+            </div>
+
+            <div class="conditions">
+                <input type="checkbox" name="terms" id="terms" class="terms" required>
+                <label for="terms">By creating an account on IndieBrew, you agree to the <a>Terms & Conditions.</a></label>
+            </div>
+
+            <input type="submit" id="submit" class="submit" value="Create an Account">
+        </form>
+    </div>
+    
 </body>
 </html>
