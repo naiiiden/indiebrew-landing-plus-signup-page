@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   font-family: DM Sans, sans-serif;
   position: relative;
+  background: radial-gradient(50% 128% at 50% 50%, rgba(193, 67, 252, 0.3) 0%, rgba(255, 221, 255, 0.6) 100%);
 }
 
 img {
@@ -35,6 +36,7 @@ header .back button {
   border: 1px solid #6b6b6b;
   border-radius: .25rem;
   padding: .5rem;
+  cursor: pointer;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -71,6 +73,14 @@ header .back p {
 
 .main_form_wrapper {
   padding: 0 1.5rem 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
 }
 
 .main_form_wrapper main {
@@ -100,6 +110,8 @@ header .back p {
 }
 
 .main_form_wrapper form {
+  background: #fff;
+  border-radius: .5rem;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,10 +207,15 @@ header .back p {
 
 @media screen and (min-width: 1024px) {
   .main_form_wrapper {
-    padding: 0 12rem 3rem 12rem;
+    padding: 0 12rem 0rem 12rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

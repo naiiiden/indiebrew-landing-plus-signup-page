@@ -26,6 +26,10 @@
             color: #f9f0fd;
             text-decoration: none;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
     
             span {
                 color: #fff;
@@ -79,7 +83,6 @@
 
             h1 {
                 font-size: 2rem;
-                
             }
         }
     }

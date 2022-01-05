@@ -11,13 +11,7 @@ body {
   min-height: 100vh;
   font-family: DM Sans, sans-serif;
   position: relative;
-  background: linear-gradient(280deg, white 76%, #790081 160%);
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    background: linear-gradient(320deg, white 76%, #790081 160%);
-  }
+  background: linear-gradient(115deg, rgba(184, 73, 252, 0.3) 0%, rgba(253, 131, 63, 0) 40%) no-repeat;
 }
 
 img {
@@ -86,7 +80,7 @@ header a.start span {
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    left: -999%;
+    left: 999%;
     right: 0;
     top: 0;
     bottom: 0;
@@ -175,6 +169,10 @@ header a.start span {
   color: #f9f0fd;
   text-decoration: none;
   cursor: pointer;
+}
+
+.main_image_wrapper main .start:hover {
+  text-decoration: underline;
 }
 
 .main_image_wrapper main .start span {
