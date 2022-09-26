@@ -148,7 +148,7 @@ header .back p {
     padding: 0 12rem 0rem 12rem;
     display: flex;
     flex-direction: row;
-    gap: 0;
+    gap: 1.5rem;
     align-items: center;
     justify-content: space-between;
     position: absolute;
