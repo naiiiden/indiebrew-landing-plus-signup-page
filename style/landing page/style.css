@@ -102,20 +102,20 @@ header a.start span {
   flex-direction: column;
   gap: 2rem;
 }
-.main_image_wrapper main {
+.main_image_wrapper .main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-start;
 }
-.main_image_wrapper main h1 {
+.main_image_wrapper .main h1 {
   font-size: 2.3rem;
 }
-.main_image_wrapper main p {
+.main_image_wrapper .main p {
   font-weight: 500;
   color: #6b6b6b;
 }
-.main_image_wrapper main .start {
+.main_image_wrapper .main .start {
   background: #664efc;
   padding: 0.75rem 1.25rem;
   border-radius: 0.25rem;
@@ -123,21 +123,21 @@ header a.start span {
   text-decoration: none;
   cursor: pointer;
 }
-.main_image_wrapper main .start:hover {
+.main_image_wrapper .main .start:hover {
   text-decoration: underline;
 }
-.main_image_wrapper main .start span {
+.main_image_wrapper .main .start span {
   color: #fff;
   font-weight: 700;
 }
-.main_image_wrapper main .people {
+.main_image_wrapper .main .people {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
   font-weight: 500;
 }
-.main_image_wrapper main .people span {
+.main_image_wrapper .main .people span {
   color: #664efc;
 }
 
@@ -149,7 +149,7 @@ header a.start span {
     width: 50%;
     align-self: center;
   }
-  .main_image_wrapper main h1 {
+  .main_image_wrapper .main h1 {
     font-size: 2.75rem;
   }
 }
@@ -162,21 +162,21 @@ header a.start span {
   .main_image_wrapper .feed {
     width: 50%;
   }
-  .main_image_wrapper main {
+  .main_image_wrapper .main {
     gap: 0.5rem;
   }
-  .main_image_wrapper main h1 {
+  .main_image_wrapper .main h1 {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  .main_image_wrapper main {
+  .main_image_wrapper .main {
     gap: 1rem;
   }
-  .main_image_wrapper main h1 {
+  .main_image_wrapper .main h1 {
     font-size: 3rem;
   }
-  .main_image_wrapper main p {
+  .main_image_wrapper .main p {
     font-size: 1.1rem;
   }
 }
